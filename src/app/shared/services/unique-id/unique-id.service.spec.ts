@@ -19,4 +19,13 @@ describe(UniqueIdService.name, () => {
     }
     expect(ids.size).toBe(50);
   });
+
+  it(`${UniqueIdService.prototype.getNumberOfGeneratedIds.name}
+  should return the number of generatedIds
+  when called`, () => {
+    const service = new UniqueIdService();
+    service.generateUniqueIdWithPrefix('app');
+    service.generateUniqueIdWithPrefix('app');
+    expect(service.getNumberOfGeneratedIds()).toBe(2);
+  });
 });
