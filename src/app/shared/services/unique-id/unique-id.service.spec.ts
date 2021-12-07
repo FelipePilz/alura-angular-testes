@@ -6,13 +6,6 @@ describe(UniqueIdService.name, () => {
   });
 
   it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
-  should generate id
-  when called with prefix`, () => {
-    const id = service.generateUniqueIdWithPrefix('app');
-    expect(id.startsWith('app-')).toBeTrue;
-  });
-
-  it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
   should not generate duplicated IDs
   when called multiple times
   `, () => {
@@ -21,6 +14,13 @@ describe(UniqueIdService.name, () => {
       ids.add(service.generateUniqueIdWithPrefix('app'));
     }
     expect(ids.size).toBe(50);
+  });
+
+  it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
+  should generate id
+  when called with prefix`, () => {
+    const id = service.generateUniqueIdWithPrefix('app');
+    expect(id.startsWith('app-')).toBeTrue();
   });
 
   it(`#${UniqueIdService.prototype.getNumberOfGeneratedIds.name}
@@ -34,7 +34,7 @@ describe(UniqueIdService.name, () => {
   it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
   should throw
   when called with empty`, () => {
-    const emptyValues = [null, undefined, ''];
+    const emptyValues = [null, undefined, '', '0'];
     emptyValues.forEach((emptyValue) => {
       expect(() => service.generateUniqueIdWithPrefix(emptyValue)).toThrow();
     });
