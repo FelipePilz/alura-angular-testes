@@ -33,10 +33,11 @@ describe(LikeWidgetComponent.name, () => {
 
   it(`#${LikeWidgetComponent.prototype.like.name}
   should trigger emission
-  when called`, () => {
+  when called`, (done) => {
     fixture.detectChanges();
     component.liked.subscribe(() => {
       expect(true).toBeTrue();
+      done();
     });
     component.like();
   });
