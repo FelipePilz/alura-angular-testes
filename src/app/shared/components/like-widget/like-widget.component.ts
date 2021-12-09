@@ -13,7 +13,7 @@ export class LikeWidgetComponent implements OnInit {
 
   //Total de likes
   @Input() public likes = 0;
-  @Input() public id = null;
+  @Input() public id: string = null;
 
   public fonts = { faThumbsUp };
 
