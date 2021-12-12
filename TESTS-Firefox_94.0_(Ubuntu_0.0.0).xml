@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<testsuite name="Firefox 94.0 (Ubuntu 0.0.0)" package="" timestamp="2021-12-12T16:37:34" id="0" hostname="felipe-pc" tests="8" errors="0" failures="0" time="0.084">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0"/>
+  </properties>
+  <testcase name="LikeWidgetComponent Should auto-generate ID during ngOnInit when (@Input id) is not assigned" time="0.059" classname="Firefox_94_0_(Ubuntu_0_0_0).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent Should create component" time="0.008" classname="Firefox_94_0_(Ubuntu_0_0_0).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent #like&#xA;  should trigger (@Output liked)&#xA;  when called" time="0.008" classname="Firefox_94_0_(Ubuntu_0_0_0).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent Should NOT auto-generate ID during ngOnInit when (@Input id) is assigned" time="0.008" classname="Firefox_94_0_(Ubuntu_0_0_0).LikeWidgetComponent"/>
+  <testcase name="UniqueIdService #generateUniqueIdWithPrefix&#xA;  should generate id&#xA;  when called with prefix" time="0" classname="Firefox_94_0_(Ubuntu_0_0_0).UniqueIdService"/>
+  <testcase name="UniqueIdService #generateUniqueIdWithPrefix&#xA;  should not generate duplicated IDs&#xA;  when called multiple times&#xA;  " time="0.001" classname="Firefox_94_0_(Ubuntu_0_0_0).UniqueIdService"/>
+  <testcase name="UniqueIdService #generateUniqueIdWithPrefix&#xA;  should throw&#xA;  when called with empty" time="0" classname="Firefox_94_0_(Ubuntu_0_0_0).UniqueIdService"/>
+  <testcase name="UniqueIdService #getNumberOfGeneratedIds&#xA;  should return the number of generatedIds&#xA;  when called" time="0" classname="Firefox_94_0_(Ubuntu_0_0_0).UniqueIdService"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
